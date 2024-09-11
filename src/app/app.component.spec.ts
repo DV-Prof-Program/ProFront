@@ -23,7 +23,7 @@ describe('AppComponent', () => {
   it(`should have as title 'ProFront'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('ProFront');
+    expect(app.title).toEqual('ProFront'); //Launches fine with "Property 'title' does not exist" error
   });
 
   it('should render title', () => {

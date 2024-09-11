@@ -1,4 +1,13 @@
 <section class="call-to-action">
   <h2>Sign Up for News</h2>
+  <input type="email"
+         placeholder="Enter your email"
+         [(ngModel)]="email"
+         #emailInput="ngModel"
+         required
+         class="email-input" />
+  <div *ngIf="emailInput.invalid && emailInput.touched" class="error-message">
+    Please enter a valid email address.
+  </div>
   <button (click)="signUp()">Sign Up</button>
 </section>

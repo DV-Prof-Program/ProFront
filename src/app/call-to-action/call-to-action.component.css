@@ -1,0 +1,17 @@
+.email-input {
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 10px;
+  border: 1px solid #DECD92;
+  border-radius: 5px;
+  background-color: #130621;
+  color: #DECD92;
+  font-family: 'Kodchasan', sans-serif;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
