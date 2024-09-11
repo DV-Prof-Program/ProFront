@@ -10,8 +10,43 @@
   font-family: 'Kodchasan', sans-serif;
 }
 
+button {
+  background-color: #361F68;
+  color: #DECD92;
+  padding: 10px 20px;
+  border: 1px solid #DECD92;
+  cursor: pointer;
+  font-family: 'Kodchasan', sans-serif;
+}
+
+  button:hover {
+    background-color: #2D1856;
+  }
+
 .error-message {
   color: red;
   margin-bottom: 10px;
   font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .email-input {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .error-message {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1024px) {
+  button {
+    padding: 10px;
+    font-size: 16px;
+  }
 }
