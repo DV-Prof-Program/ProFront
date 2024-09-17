@@ -31,10 +31,10 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+              "src/assets",
+              "src/assets/headphones-main.png",
+              "src/assets/headphones-feature.png",
+              "src/favicon.ico"
             ],
             "styles": [
               "src/styles.css"
@@ -89,10 +89,10 @@
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+              "src/assets",
+              "src/assets/headphones-main.png",
+              "src/assets/headphones-feature.png",
+              "src/favicon.ico"
             ],
             "styles": [
               "src/styles.css"

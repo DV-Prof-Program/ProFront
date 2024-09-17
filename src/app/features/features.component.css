@@ -1,0 +1,50 @@
+/* Container for the image */
+.image-container {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Headphones image */
+.headphones-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Clickable feature spots */
+.feature-spot {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(54, 31, 104, 0.8);
+  border: 1px solid #DECD92;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Hover effect for feature spots */
+.feature-spot:hover {
+  background-color: rgba(54, 31, 104, 1);
+}
+
+/* Feature description box */
+.feature-description {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #130621;
+  border: 1px solid #DECD92;
+  border-radius: 5px;
+  max-width: 600px;
+  color: #DECD92;
+}
+
+.feature-description h3 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+}
+
+.feature-description p {
+  margin: 0;
+  font-size: 1rem;
+}

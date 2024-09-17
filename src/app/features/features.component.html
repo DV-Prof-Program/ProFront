@@ -1,7 +1,15 @@
 <section class="features">
-  <h2>Includes</h2>
-  <ul>
-    <li>A great many things</li>
-    <li>I haven't thought about it much</li>
-  </ul>
+  <h2>Explore the many features of our headphones</h2>
+  <div class="image-container">
+    <img src="assets/headphones-feature.png" alt="Noise-Cancelling Headphones" class="headphones-img">
+
+    <button class="feature-spot" (click)="showFeature('ear-cups')" style="top: 40%; left: 30%;"></button>
+    <button class="feature-spot" (click)="showFeature('headband')" style="top: 10%; left: 50%;"></button>
+    <button class="feature-spot" (click)="showFeature('noise-cancelling')" style="top: 60%; left: 70%;"></button>
+  </div>
+
+  <div *ngIf="selectedFeature" class="feature-description">
+    <h3>{{ featureData[selectedFeature].title }}</h3>
+    <p>{{ featureData[selectedFeature].description }}</p>
+  </div>
 </section>
