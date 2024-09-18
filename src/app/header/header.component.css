@@ -13,5 +13,24 @@
   height: auto;
   display: block;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  /*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);*/
+}
+
+.audio-player {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #361F68;
+  color: #DECD92;
+  border: 1px solid #DECD92;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2E1959;
 }

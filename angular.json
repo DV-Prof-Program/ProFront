@@ -34,6 +34,7 @@
               "src/assets",
               "src/assets/headphones-main.png",
               "src/assets/headphones-feature.png",
+              "src/assets/air-sound.wav",
               "src/favicon.ico"
             ],
             "styles": [
@@ -92,6 +93,7 @@
               "src/assets",
               "src/assets/headphones-main.png",
               "src/assets/headphones-feature.png",
+              "src/assets/air-sound.wav",
               "src/favicon.ico"
             ],
             "styles": [

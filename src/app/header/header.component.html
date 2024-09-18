@@ -5,3 +5,15 @@
 <div class="image-container">
   <img src="assets/headphones-main.png" alt="Noise-Cancelling Headphones" class="main-image">
 </div>
+<div class="audio-player">
+  <h2>Listen to the difference</h2>
+
+  <!-- Audio player to play the .wav file -->
+  <audio id="audioPlayer" controls>
+    <source src="assets/air-sound.wav" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Button to muffle the sound -->
+  <button id="muffleButton" (click)="toggleMuffle()">Toggle Noise Cancelling</button>
+</div>
