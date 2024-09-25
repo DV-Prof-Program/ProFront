@@ -34,6 +34,9 @@
               "src/assets",
               "src/assets/headphones-main.png",
               "src/assets/headphones-feature.png",
+              "src/assets/headphones-ear.png",
+              "src/assets/headphones-noise.png",
+              "src/assets/headphones-band.png",
               "src/assets/air-sound.wav",
               "src/favicon.ico"
             ],
@@ -93,6 +96,9 @@
               "src/assets",
               "src/assets/headphones-main.png",
               "src/assets/headphones-feature.png",
+              "src/assets/headphones-ear.png",
+              "src/assets/headphones-noise.png",
+              "src/assets/headphones-band.png",
               "src/assets/air-sound.wav",
               "src/favicon.ico"
             ],

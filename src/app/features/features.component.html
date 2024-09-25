@@ -8,6 +8,12 @@
     <button class="feature-spot" (click)="showFeature('noise-cancelling')" style="top: 60%; left: 70%;"></button>
   </div>
 
+  <div class="feature-image">
+    <img *ngIf="selectedFeature === 'ear-cups'" src="assets/headphones-ear.png" alt="Ear Cups">
+    <img *ngIf="selectedFeature === 'headband'" src="assets/headphones-band.png" alt="Headband">
+    <img *ngIf="selectedFeature === 'noise-cancelling'" src="assets/headphones-noise.png" alt="Noise Cancelling">
+  </div>
+
   <div *ngIf="selectedFeature" class="feature-description">
     <h3>{{ featureData[selectedFeature].title }}</h3>
     <p>{{ featureData[selectedFeature].description }}</p>
