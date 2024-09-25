@@ -49,3 +49,36 @@
   margin: 0;
   font-size: 1rem;
 }
+
+.battery-simulator {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.slider-container {
+  margin-bottom: 20px;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin: 10px 0;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #361F68;
+  color: #DECD92;
+  border: 1px solid #DECD92;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2E1959;
+}
+
+.battery-life-display {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #DECD92;
+}

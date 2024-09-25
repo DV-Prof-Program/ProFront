@@ -12,6 +12,31 @@ interface Feature {
 export class FeaturesComponent {
   selectedFeature: string | null = null;
 
+  //Battery Life
+  volume: number = 50; // Default 50 | Initial volume level (percentage)
+  isNoiseCancellingOn: boolean = false; // Initial noise-cancelling status
+  baseBatteryLife: number = 20; // Default 20 | Base battery life at 50% volume without noise-cancelling
+  batteryLife: number = this.baseBatteryLife; // Initial battery life in hours (at 50% volume without noise-cancelling)
+
+  ngOnInit() {
+    this.calculateBatteryLife();
+  }
+
+  // Function to toggle noise-cancelling on/off
+  toggleNoiseCancelling() {
+    this.isNoiseCancellingOn = !this.isNoiseCancellingOn;
+    this.calculateBatteryLife();
+  }
+
+  // Function to calculate battery life based on current settings
+  calculateBatteryLife() {
+    const noiseCancellingImpact = this.isNoiseCancellingOn ? 0.85 : 1; // Default 0.75 | Reduce battery life if noise-cancelling is on
+    const volumeImpact = 1 - (this.volume - 50) / 100; // Battery life decreases as volume increases (linearly from 50%)
+
+    // Calculate final battery life based on both factors
+    this.batteryLife = this.baseBatteryLife * noiseCancellingImpact * volumeImpact;
+  }
+
   // Feature data
   featureData: { [key: string]: Feature } = {
     'ear-cups': {

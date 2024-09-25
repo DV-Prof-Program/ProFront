@@ -18,4 +18,33 @@
     <h3>{{ featureData[selectedFeature].title }}</h3>
     <p>{{ featureData[selectedFeature].description }}</p>
   </div>
+
+  <!-- Battery Simulator -->
+  <div class="battery-simulator">
+    <h2>Battery Life Simulation</h2>
+
+    <!-- Volume slider -->
+    <div class="slider-container">
+      <label for="volumeSlider">Volume Level: {{ volume }}%</label>
+      <input type="range"
+             id="volumeSlider"
+             min="0"
+             max="100"
+             [(ngModel)]="volume"
+             (input)="calculateBatteryLife()" />
+    </div>
+
+    <!-- Noise-cancelling toggle button -->
+    <div class="noise-cancelling-container">
+      <button (click)="toggleNoiseCancelling()">
+        {{ isNoiseCancellingOn ? 'Disable Noise Cancelling' : 'Enable Noise Cancelling' }}
+      </button>
+    </div>
+
+    <!-- Battery life display -->
+    <div class="battery-life-display">
+      <p>Estimated Battery Life: {{ batteryLife | number:'1.1-1' }} hours</p>
+    </div>
+  </div>
+
 </section>
