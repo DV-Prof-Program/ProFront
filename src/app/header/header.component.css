@@ -34,3 +34,18 @@ button {
 button:hover {
   background-color: #2E1959;
 }
+.video-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+video {
+  border: 3px solid #361F68;
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  video {
+    width: 100%; /* Ensure the video resizes to fit smaller screens */
+  }
+}
